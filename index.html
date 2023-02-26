@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <footer class="footer">
+        2023 © Site desenvolvido pelos discentes Victor Hugo e Vitor Cesar
+    </footer>
+
+    <div class="container">
+        <h1 class="text">CADASTRO</h1>
+
+        <div class="base">
+            <form class="base2" action="/action_page.php" method="get">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Nome completo" required oninput="acceptTerm()"><br><br>
+                <label for="user"></label>
+                <input type="text" id="user" name="user" placeholder="Usuário" required oninput="acceptTerm()"><br><br>
+                <label for="email"></label>
+                <input type="text" id="email" name="email" placeholder="E-mail" required oninput="acceptTerm()"><br><br>
+                <label for="pass"></label>
+                <input type="password" id="pass" name="pass" placeholder="Senha" required oninput="acceptTerm()"><br><br>
+                <div class="term">
+                    <input type="radio" id="term" name="fav_language" value="TERM" oninput="acceptTerm()">
+                    <label class="term2" for="term">Eu li e concordo com os <a href="">termos de uso e políticas de privacidade</a>.</label><br><br>
+                </div>
+                <input id="termBtn" class="button disabled" type="submit" value="CADASTRAR" disabled>
+            </form>
+        </div>
+    </div>
+    <!--<div class="menu">
+        <div class="menu-buttons">
+            <a href="#"><input type="button" value="LOGIN"></a>
+        </div>
+    </div>-->
+</body>
+<script src="./script.js"></script>
+</html>
