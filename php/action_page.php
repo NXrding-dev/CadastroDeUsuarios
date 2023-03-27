@@ -1,9 +1,9 @@
 <?php 
     include_once './connect.php';
-    $name = $_GET['name'];
-    $user = $_GET['user'];
-    $email = $_GET['email'];
-    $pass = $_GET['pass'];
+    $name = $_POST['name'];
+    $user = $_POST['user'];
+    $email = $_POST['email'];
+    $pass = $_POST['pass'];
 
     // echo "Nome: $name<br>Usuário: $user<br>E-mail: $email<br>Senha: $password";
 
@@ -25,7 +25,7 @@
     //     echo "Deu erro: " . $sql . "<br>" . mysqli_error($connect);
     // }
 
-    $sql = "INSERT INTO cadastro (name, user, email, password) VALUES ('{$name}', '{$user}', '{$email}', '{$pass}')";
+    $sql = "INSERT INTO users (name, user, email, password) VALUES ('{$name}', '{$user}', '{$email}', '{$pass}')";
 
     if (mysqli_query($connect, $sql)) {
         header('Location:./show.php') or die();
