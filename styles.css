@@ -94,6 +94,7 @@ body{
     /* bottom: 16%;
     left: 34.5%; */
     width: 400px;
+    height: 400px;
     display: grid;
     place-items: center;
 }
